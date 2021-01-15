@@ -2,7 +2,7 @@ FROM        python:3.8-alpine
 
 LABEL       author="Theo Paris" maintainer="theoparisdesigns@gmail.com"
 
-RUN         apk add --no-cache --update curl bash git ffmpeg gcc g++ libffi-dev \
+RUN         apk add --no-cache --update curl bash git ffmpeg gcc g++ libffi-dev make \
     && adduser -D -h /home/container container
 
 USER        container
